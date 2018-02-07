@@ -18,7 +18,6 @@ var BtnInput = {
     Next: 1
 };
 
-
 //
 // Transition function Definitions
 //
@@ -53,7 +52,6 @@ var handleCanceling = function(statefulObj) {
     console.log('Canceling');
 };
 
-
 //
 // Finite State Machine Definition
 //
@@ -77,7 +75,6 @@ var FSM = [
     [Status.Canceled, BtnInput.Next, transitionFromCanceled, Status.Canceled],
     [Status.Canceled, BtnInput.Cancel, transitionFromCanceled, Status.Canceled]
 ];
-
 
 /**
  * Transitions the machine
@@ -120,8 +117,6 @@ function transitionState(statefulObj, input) {
     }
 }
 
-
-
 /***********************************************************************************************************************
  *
  * EXECUTION
@@ -132,7 +127,6 @@ function transitionState(statefulObj, input) {
 const myAwesomeObject = {
     status: 0
 };
-
 
 // Input arrives in this order
 const inputStream = [
