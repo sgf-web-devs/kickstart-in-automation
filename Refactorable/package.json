@@ -1,0 +1,12 @@
+{
+  "name": "Refactorable",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "mocha": "^4.1.0"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha --require babel-register --ui bdd -R spec ./*.test.js"
+  }
+}
